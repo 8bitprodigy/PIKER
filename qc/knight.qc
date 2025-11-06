@@ -58,6 +58,8 @@ $frame death9 death10
 $frame deathb1 deathb2 deathb3 deathb4 deathb5 deathb6 deathb7 deathb8
 $frame deathb9 deathb10 deathb11
 
+void() monster_dog;
+
 void()	knight_stand1	=[	$stand1,	knight_stand2	] {ai_stand();};
 void()	knight_stand2	=[	$stand2,	knight_stand3	] {ai_stand();};
 void()	knight_stand3	=[	$stand3,	knight_stand4	] {ai_stand();};
@@ -253,6 +255,7 @@ void() knight_die =
 */
 void() monster_knight =
 {
+	/*
 	if (deathmatch)
 	{
 		remove(self);
@@ -284,4 +287,5 @@ void() monster_knight =
 	self.th_die = knight_die;
 
 	walkmonster_start ();
+	*/
 };

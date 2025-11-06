@@ -45,6 +45,7 @@ $frame swim18
 $frame pain1 pain2 pain3 pain4 pain5 pain6 pain7 pain8
 $frame pain9
 
+void() monster_dog;
 void() swimmonster_start;
 
 void() f_stand1  =[      $swim1, f_stand2 ] {ai_stand();};
@@ -207,6 +208,7 @@ void(entity attacker, float damage)	fish_pain =
 */
 void() monster_fish =
 {
+	/*
 	if (deathmatch)
 	{
 		remove(self);
@@ -234,4 +236,7 @@ void() monster_fish =
 	self.th_melee = f_attack1;
 
 	swimmonster_start ();
+	*/
+	
+	monster_dog();
 };

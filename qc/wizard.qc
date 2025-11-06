@@ -62,6 +62,8 @@ if self.enemy maintains it's current velocity
 0.1 is moderately accurate, 0.0 is totally accurate
 =============
 */
+void() monster_dog;
+
 void(entity missile, float mspeed, float accuracy) LaunchMissile =
 {
 	local vector vec, move;
@@ -403,6 +405,7 @@ void() Wiz_Missile =
 */
 void() monster_wizard =
 {
+	/*
 	if (deathmatch)
 	{
 		remove(self);
@@ -437,4 +440,6 @@ void() monster_wizard =
 	self.th_die = wiz_die;
 
 	flymonster_start ();
+	*/
+	monster_dog();
 };

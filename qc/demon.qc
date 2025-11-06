@@ -48,6 +48,7 @@ $frame attacka1 attacka2 attacka3 attacka4 attacka5 attacka6 attacka7 attacka8
 $frame attacka9 attacka10 attacka11 attacka12 attacka13 attacka14 attacka15
 
 //============================================================================
+void() monster_dog;
 
 void()	Demon_JumpTouch;
 
@@ -201,7 +202,7 @@ void() Demon_MeleeAttack =
 /*QUAKED monster_demon1 (1 0 0) (-32 -32 -24) (32 32 64) Ambush
 */
 void() monster_demon1 =
-{
+{ /*
 	if (deathmatch)
 	{
 		remove(self);
@@ -234,6 +235,8 @@ void() monster_demon1 =
 	self.th_pain = demon1_pain;
 
 	walkmonster_start();
+*/
+	monster_dog();
 };
 
 

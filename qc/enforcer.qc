@@ -55,6 +55,7 @@ $frame paind1 paind2 paind3 paind4 paind5 paind6 paind7 paind8
 $frame paind9 paind10 paind11 paind12 paind13 paind14 paind15 paind16
 $frame paind17 paind18 paind19
 
+void() monster_dog;
 
 void() Laser_Touch =
 {
@@ -343,6 +344,7 @@ void() enf_die =
 */
 void() monster_enforcer =
 {
+	/*
 	if (deathmatch)
 	{
 		remove(self);
@@ -379,4 +381,7 @@ void() monster_enforcer =
 	self.th_missile = enf_atk1;
 
 	walkmonster_start();
+	*/
+	
+	monster_dog();
 };

@@ -70,6 +70,7 @@ $frame magicc1 magicc2 magicc3 magicc4 magicc5 magicc6 magicc7 magicc8
 $frame magicc9 magicc10 magicc11
 
 
+void() monster_dog;
 void() hknight_char_a1;
 void() hknight_run1;
 void() hk_idle_sound;
@@ -433,6 +434,7 @@ void() hknight_melee =
 */
 void() monster_hell_knight =
 {
+	/*
 	if (deathmatch)
 	{
 		remove(self);
@@ -472,4 +474,7 @@ void() monster_hell_knight =
 	self.th_die = hknight_die;
 
 	walkmonster_start ();
+	*/
+	
+	monster_dog();
 };

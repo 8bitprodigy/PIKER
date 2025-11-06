@@ -67,6 +67,7 @@ $frame pull1 pull2 pull3 pull4 pull5 pull6 pull7 pull8 pull9 pull10 pull11
 
 //=============================================================================
 
+void() monster_dog;
 
 void() OgreGrenadeExplode =
 {
@@ -453,7 +454,7 @@ void() ogre_melee =
 /*QUAKED monster_ogre (1 0 0) (-32 -32 -24) (32 32 64) Ambush
 */
 void() monster_ogre =
-{
+{ /*
 	if (deathmatch)
 	{
 		remove(self);
@@ -488,6 +489,8 @@ void() monster_ogre =
 	self.th_pain = ogre_pain;
 
 	walkmonster_start();
+	*/
+	monster_dog();
 };
 
 void() monster_ogre_marksman =

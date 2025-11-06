@@ -44,6 +44,8 @@ $frame fly1 fly2 fly3 fly4
 
 $frame exp
 
+void() monster_dog;
+
 void()	tbaby_stand1	=[	$walk1,		tbaby_stand1	] {ai_stand();};
 
 void()	tbaby_hang1		=[	$walk1,		tbaby_hang1	] {ai_stand();};
@@ -204,6 +206,7 @@ void()	tbaby_die2	=[	$exp,		tbaby_run1	]
 */
 void() monster_tarbaby =
 {
+	/*
 	if (deathmatch)
 	{
 		remove(self);
@@ -232,4 +235,6 @@ void() monster_tarbaby =
 	self.th_die = tbaby_die1;
 
 	walkmonster_start ();
+	*/
+	monster_dog();
 };

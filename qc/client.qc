@@ -80,14 +80,14 @@ void() SetChangeParms =
 
 void() SetNewParms =
 {
-	parm1 = IT_SHOTGUN | IT_AXE;
+	parm1 = IT_LIGHTNING | IT_AXE;
 	parm2 = 100;
 	parm3 = 0;
-	parm4 = 25;
+	parm4 = 0;
 	parm5 = 0;
 	parm6 = 0;
-	parm7 = 0;
-	parm8 = 1;
+	parm7 = 69;
+	parm8 = IT_LIGHTNING;
 	parm9 = 0;
 };
 

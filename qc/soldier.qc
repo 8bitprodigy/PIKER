@@ -61,6 +61,8 @@ SOLDIER CODE
 ==============================================================================
 */
 
+void() monster_dog;
+
 void() army_fire;
 
 void()	army_stand1	=[	$stand1,	army_stand2	] {ai_stand();};
@@ -279,6 +281,7 @@ void() army_die =
 */
 void() monster_army =
 {
+	/*
 	if (deathmatch)
 	{
 		remove(self);
@@ -317,4 +320,6 @@ void() monster_army =
 	self.th_die = army_die;
 
 	walkmonster_start ();
+	*/
+	monster_dog();
 };

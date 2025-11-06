@@ -1,0 +1,68 @@
+Source file: progs.src
+outputfile: ../progs.dat
+compiling defs.qc
+compiling subs.qc
+compiling fight.qc
+compiling ai.qc
+compiling combat.qc
+compiling items.qc
+compiling weapons.qc
+compiling world.qc
+compiling client.qc
+compiling player.qc
+compiling monsters.qc
+compiling doors.qc
+compiling buttons.qc
+compiling triggers.qc
+compiling plats.qc
+compiling misc.qc
+compiling ogre.qc
+compiling demon.qc
+compiling shambler.qc
+compiling knight.qc
+compiling soldier.qc
+compiling wizard.qc
+compiling dog.qc
+compiling zombie.qc
+compiling boss.qc
+compiling tarbaby.qc
+compiling hknight.qc
+compiling fish.qc
+compiling shalrath.qc
+compiling enforcer.qc
+compiling oldone.qc
+Recognised progs as NetQuake server gamecode
+Progs should run on any Quake executor
+defs.qc:436: warning: wad  no references
+defs.qc:447: warning: light_lev  no references
+defs.qc:520: warning: dest  no references
+defs.qc:567: warning: waitmax  no references
+defs.qc:568: warning: distance  no references
+defs.qc:569: warning: volume  no references
+warning: Model progs/s_light.mdl was used but not precached
+warning: Model progs/w_spike.mdl was used but not precached
+warning: Model progs/k_spike.mdl was used but not precached
+warning: Model progs/v_spike.mdl was used but not precached
+ 87688 strofs (of 1000000)
+ 19852 numstatements (of 524288)
+  2094 numfunctions (of 16384)
+  4241 numglobaldefs (of 32768)
+   217 numfielddefs (194 unique) (of 2048)
+  4230 numpr_globals (of 65536)
+Writing ../progs.dat
+374660 TOTAL SIZE
+Writing ../progs.lno
+163 unique precache_sounds
+ 70 unique precache_models
+104 unique precache_files
+Compile Complete
+
+optres_shortenifnots 114
+optres_overlaptemps 7131
+optres_constantarithmatic 17
+optres_nonvec_parms 3715
+optres_assignments 414
+optres_unreferenced 15
+optres_dupconstdefs 101
+numtemps 117
+10 warnings

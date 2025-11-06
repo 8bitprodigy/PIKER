@@ -8,3 +8,6 @@ build
 dist
 # compilers
 compilers
+
+progs.dat
+progs.lno

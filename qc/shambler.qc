@@ -54,6 +54,8 @@ $frame pain1 pain2 pain3 pain4 pain5 pain6
 $frame death1 death2 death3 death4 death5 death6
 $frame death7 death8 death9 death10 death11
 
+void() monster_dog;
+
 void() sham_stand1	=[	$stand1,	sham_stand2	] {ai_stand();};
 void() sham_stand2	=[	$stand2,	sham_stand3	] {ai_stand();};
 void() sham_stand3	=[	$stand3,	sham_stand4	] {ai_stand();};
@@ -374,6 +376,7 @@ void() sham_die =
 */
 void() monster_shambler =
 {
+	/*
 	if (deathmatch)
 	{
 		remove(self);
@@ -410,4 +413,6 @@ void() monster_shambler =
 	self.th_pain = sham_pain;
 
 	walkmonster_start();
+	*/
+	monster_dog();
 };

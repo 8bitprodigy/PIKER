@@ -39,6 +39,7 @@ $frame death1 death2 death3 death4 death5 death6 death7
 $frame	walk1 walk2 walk3 walk4 walk5 walk6 walk7 walk8 walk9 walk10
 $frame	walk11 walk12
 
+void() monster_dog;
 void() ShalMissile;
 void() shal_stand     =[      $walk1,       shal_stand    ] {ai_stand();};
 
@@ -226,6 +227,7 @@ void() ShalMissileTouch =
 */
 void() monster_shalrath =
 {
+	/*
 	if (deathmatch)
 	{
 		remove(self);
@@ -258,4 +260,7 @@ void() monster_shalrath =
 
 	self.think = walkmonster_start;
 	self.nextthink = time + 0.1 + random ()*0.1;
+	*/
+	
+	monster_dog();
 };

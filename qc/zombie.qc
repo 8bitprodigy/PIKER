@@ -74,6 +74,8 @@ float	SPAWN_CRUCIFIED	= 1;
 
 .float inpain;
 
+void() monster_dog;
+
 void() zombie_stand1	=[	$stand1,		zombie_stand2	] {ai_stand();};
 void() zombie_stand2	=[	$stand2,		zombie_stand3	] {ai_stand();};
 void() zombie_stand3	=[	$stand3,		zombie_stand4	] {ai_stand();};
@@ -506,41 +508,42 @@ void() monster_zombie =
 		return;
 	}
 
-	precache_model ("progs/zombie.mdl");
-	precache_model ("progs/h_zombie.mdl");
-	precache_model ("progs/zom_gib.mdl");
-
-	precache_sound ("zombie/z_idle.wav");
-	precache_sound ("zombie/z_idle1.wav");
-	precache_sound ("zombie/z_shot1.wav");
-	precache_sound ("zombie/z_gib.wav");
-	precache_sound ("zombie/z_pain.wav");
-	precache_sound ("zombie/z_pain1.wav");
-	precache_sound ("zombie/z_fall.wav");
-	precache_sound ("zombie/z_miss.wav");
-	precache_sound ("zombie/z_hit.wav");
-	precache_sound ("zombie/idle_w2.wav");
-
-	self.solid = SOLID_SLIDEBOX;
-	self.movetype = MOVETYPE_STEP;
-
-	setmodel (self, "progs/zombie.mdl");
-
-	setsize (self, '-16 -16 -24', '16 16 40');
-	self.health = 60;
-
-	self.th_stand = zombie_stand1;
-	self.th_walk = zombie_walk1;
-	self.th_run = zombie_run1;
-	self.th_pain = zombie_pain;
-	self.th_die = zombie_die;
-	self.th_missile = zombie_missile;
-
 	if (self.spawnflags & SPAWN_CRUCIFIED)
 	{
+
+		precache_model ("progs/zombie.mdl");
+		precache_model ("progs/h_zombie.mdl");
+		precache_model ("progs/zom_gib.mdl");
+
+		precache_sound ("zombie/z_idle.wav");
+		precache_sound ("zombie/z_idle1.wav");
+		precache_sound ("zombie/z_shot1.wav");
+		precache_sound ("zombie/z_gib.wav");
+		precache_sound ("zombie/z_pain.wav");
+		precache_sound ("zombie/z_pain1.wav");
+		precache_sound ("zombie/z_fall.wav");
+		precache_sound ("zombie/z_miss.wav");
+		precache_sound ("zombie/z_hit.wav");
+		precache_sound ("zombie/idle_w2.wav");
+
+		self.solid = SOLID_SLIDEBOX;
+		self.movetype = MOVETYPE_STEP;
+
+		setmodel (self, "progs/zombie.mdl");
+
+		setsize (self, '-16 -16 -24', '16 16 40');
+		self.health = 60;
+
+		self.th_stand = zombie_stand1;
+		self.th_walk = zombie_walk1;
+		self.th_run = zombie_run1;
+		self.th_pain = zombie_pain;
+		self.th_die = zombie_die;
+		self.th_missile = zombie_missile;
+	
 		self.movetype = MOVETYPE_NONE;
 		zombie_cruc1 ();
 	}
 	else
-		walkmonster_start();
+		monster_dog();
 };
